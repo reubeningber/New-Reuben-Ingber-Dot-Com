@@ -1,0 +1,77 @@
+// Social Colors 
+@social-ico-color: #d0d0d0;
+@podcast: #424d54;
+@instagram: #3b5998;
+@dribble: #ea4c89;
+@twitter: #22abf3;
+@github: #4183c4;
+@facebook: #3b5998;
+@mail: #db4437;
+
+.icons {
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.social-ico {
+    font-size: 35px;
+    text-decoration: none;
+    color: @social-ico-color;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-right: 10%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+
+    &.twitter {        
+        &:hover {
+            color: @twitter;
+           
+        }
+    }
+    
+    &.dribbble {    
+        &:hover {
+            color: @dribble;
+        }
+    }
+    
+    &.instagram {
+        &:hover {
+            color: @instagram;
+        }
+    }
+
+    &.github {
+        &:hover {
+            color: @github;
+        }
+    }
+
+    &.facebook {
+        &:hover {
+            color: @facebook;
+        }
+    }
+
+    &.email {
+        &:hover {
+            color: @mail;
+        }
+    }
+    &.podcast {
+        &:hover {
+            color: @podcast;
+        }
+    }
+}
