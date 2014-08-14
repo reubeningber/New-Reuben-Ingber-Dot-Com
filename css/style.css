@@ -1,4 +1,4 @@
-header {
+.site-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,16 +9,22 @@ header {
   z-index: 1;
   overflow: hidden;
   width: 100%;
-  min-height: 88%;
+  min-height: 50%;
   top: 50px;
   left: 0;
 }
+.slide-content-wrapper-top.xl {
+  min-height: 85%;
+}
 .slide-content-wrapper-bottom {
   position: absolute;
-  top: 100%;
+  top: 55%;
   width: 100%;
   min-height: 12%;
   z-index: 2;
+}
+.slide-content-wrapper-bottom.xl {
+  top: 85%;
 }
 * {
   margin: 0;
@@ -187,6 +193,14 @@ header:after {
 .project-index .project-wrapper {
   display: table-cell;
   vertical-align: middle;
+}
+.project-page {
+  background: #fff;
+  text-align: center;
+}
+.body-text {
+  width: 75%;
+  margin: 0 auto;
 }
 .about-me {
   display: table;
