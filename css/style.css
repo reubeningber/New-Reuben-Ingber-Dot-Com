@@ -288,6 +288,15 @@ header:after {
   width: 75%;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .img-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .img-container img {
+    width: 100%;
+  }
+}
 .about-me {
   display: table;
   width: 100%;
