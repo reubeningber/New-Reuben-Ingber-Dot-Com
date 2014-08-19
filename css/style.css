@@ -752,3 +752,38 @@ header:after {
     width: 80%;
   }
 }
+footer .footer-top {
+  background: #f2e394;
+  text-align: center;
+}
+footer .footer-bottom {
+  padding: 50px;
+  background: #588c7e;
+  color: #f2e394;
+  text-align: center;
+  zoom: 1;
+}
+footer .footer-bottom:before {
+  content: '';
+  display: block;
+}
+footer .footer-bottom:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+footer .footer-bottom .left {
+  width: 33.33333333%;
+  float: left;
+}
+footer .footer-bottom .middle {
+  width: 33.33333333%;
+  float: left;
+}
+footer .footer-bottom .right {
+  width: 33.33333333%;
+  float: left;
+}
+footer .footer-bottom span {
+  display: block;
+}
