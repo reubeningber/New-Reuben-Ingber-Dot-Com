@@ -10,17 +10,83 @@ header {
 	float: left;
 }
 
+@media screen and (min-width: 768px) {
+	.toggle-nav {
+		display: none;
+	}
+}
+
+	
+@media screen and (max-width: 768px) {
+	.toggle-nav {
+		display: block;
+		text-align: right;
+		padding: 15px;
+		color: @yellow;
+		font-size: 24px;
+	}
+}
+
+
 .global-nav {
 	float: right;
 	ul {
 		list-style-type: none;
 
 		li {
+			padding: 15px 15px 15px 15px;
 			float: left;
+			text-align: center;
 
 			a {
 				color: @yellow;
+				text-decoration: none;
+			}
+
+			&:hover,
+			&.active {
+				border-bottom: 3px solid @yellow;
 			}
 		}
 	}
+
+		
+	@media screen and (min-width: 768px) {
+		.toggle-nav {
+			display: none;
+		}
+		
+	}
+
+		
+	@media screen and (max-width: 768px) {
+		width: 100%;
+
+		.toggle-nav {
+			display: block;
+			text-align: right;
+			padding: 15px;
+			color: @yellow;
+			font-size: 24px;
+		}
+
+		ul {
+			width: 100%;
+			position: absolute;
+			top: 50px;
+			background: @green;
+
+			li {
+				float: none;
+				text-align: right;
+
+				a {
+					width: 100%;
+				}
+			}
+		}
+		
+	}
+
+
 }

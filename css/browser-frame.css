@@ -1,0 +1,39 @@
+.browser-frame {
+  border-radius: 5px;
+  border: 2px solid #CCC;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1004px;
+}
+.browser-top-bar {
+  border-bottom: 2px solid #CCC;
+  width: 100%;
+  float: left;
+}
+.browser-button-wrapper {
+  padding: 9px 0 0 10px;
+  float: left;
+}
+.browser-button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #CCC;
+}
+.browser-address {
+  width: 92%;
+  border-radius: 5px;
+  background: #efefef;
+  height: 25px;
+  float: right;
+  margin: 10px;
+}
+.browser-container img {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .browser-address {
+    width: 80%;
+  }
+}

@@ -1,3 +1,26 @@
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 46px;
+  font-size: 43px;
+  margin: 0 0 23px 0;
+}
+h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 23px 0;
+}
+p {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
 .site-header {
   position: fixed;
   top: 0;
@@ -14,7 +37,7 @@
   left: 0;
 }
 .slide-content-wrapper-top.xl {
-  min-height: 85%;
+  height: 85%;
 }
 .slide-content-wrapper-bottom {
   position: absolute;
@@ -30,9 +53,21 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
 .container {
   width: 60%;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+.page {
+  position: absolute;
+  top: 50px;
 }
 .btn,
 .btn:link,
@@ -172,6 +207,20 @@ header:after {
 .site-title {
   float: left;
 }
+@media screen and (min-width: 768px) {
+  .toggle-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .toggle-nav {
+    display: block;
+    text-align: right;
+    padding: 15px;
+    color: #f2e394;
+    font-size: 24px;
+  }
+}
 .global-nav {
   float: right;
 }
@@ -179,10 +228,47 @@ header:after {
   list-style-type: none;
 }
 .global-nav ul li {
+  padding: 15px 15px 15px 15px;
   float: left;
+  text-align: center;
 }
 .global-nav ul li a {
   color: #f2e394;
+  text-decoration: none;
+}
+.global-nav ul li:hover,
+.global-nav ul li.active {
+  border-bottom: 3px solid #f2e394;
+}
+@media screen and (min-width: 768px) {
+  .global-nav .toggle-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .global-nav {
+    width: 100%;
+  }
+  .global-nav .toggle-nav {
+    display: block;
+    text-align: right;
+    padding: 15px;
+    color: #f2e394;
+    font-size: 24px;
+  }
+  .global-nav ul {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    background: #588c7e;
+  }
+  .global-nav ul li {
+    float: none;
+    text-align: right;
+  }
+  .global-nav ul li a {
+    width: 100%;
+  }
 }
 .project-index {
   width: 100%;
@@ -205,6 +291,10 @@ header:after {
 .about-me {
   display: table;
   width: 100%;
+  background: url('../img/about-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: fixed;
+  height: 100%;
 }
 .about-me .container {
   display: table-cell;
@@ -223,13 +313,30 @@ header:after {
 .about-me .img-container img {
   width: 100%;
 }
+.about-me span {
+  display: block;
+  line-height: 1;
+  font-size: 25px;
+}
+.about-me h1 {
+  font-size: 100px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
 .arrow-down {
   color: #588c7e;
   font-size: 45px;
   position: absolute;
-  bottom: 0;
+  bottom: 45px;
   left: 50%;
   right: 50%;
+}
+.home-top {
+  width: 75%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
 }
 .animated {
   -webkit-animation-fill-mode: both;
@@ -562,7 +669,7 @@ header:after {
 .social-ico {
   font-size: 35px;
   text-decoration: none;
-  color: #d0d0d0;
+  color: #588c7e;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -596,4 +703,43 @@ header:after {
 }
 .social-ico.podcast:hover {
   color: #424d54;
+}
+.browser-frame {
+  border-radius: 5px;
+  border: 2px solid #CCC;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1004px;
+}
+.browser-top-bar {
+  border-bottom: 2px solid #CCC;
+  width: 100%;
+  float: left;
+}
+.browser-button-wrapper {
+  padding: 9px 0 0 10px;
+  float: left;
+}
+.browser-button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #CCC;
+}
+.browser-address {
+  width: 92%;
+  border-radius: 5px;
+  background: #efefef;
+  height: 25px;
+  float: right;
+  margin: 10px;
+}
+.browser-container img {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .browser-address {
+    width: 80%;
+  }
 }
