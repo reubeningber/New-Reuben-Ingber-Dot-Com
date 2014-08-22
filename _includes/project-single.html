@@ -1,0 +1,48 @@
+<header class="project-index" style="background-color: {{meta['Background Color']}}">
+	<div class="container project-wrapper">
+		<div class="img-container">
+			<img src="{{meta['Header Image']}}" alt="">	
+		</div>
+	</div>
+</header>
+
+<div class="project-page">
+	<div class="container">
+		<h1>A Website for {{ title }}</h1>
+		<h2 class="project-role">Role: {{meta['Project Role']}}</h2>
+
+		<div class="body-text">
+			{{ body }}
+		</div>
+
+		<h2>Deliverables</h2>
+		<p>{{meta['Deliverables']}}</p>
+
+		<a href="{{meta['Project URL']}}" class="btn btn--gray btn--m">View Site</a>
+		
+		<div class="browser-frame">
+	        <div class="browser-top-bar">
+	            <div class="browser-button-wrapper">
+	                <div class="browser-button"></div>
+	                <div class="browser-button"></div>
+	                <div class="browser-button"></div>
+	            </div>
+	            <div class="browser-address"></div>
+	        </div>
+	        <div class="browser-container">
+				<img src="{{meta['Project Image']}}" alt="">
+	        </div>
+	    </div>
+
+
+		<nav class="nav">
+			<div class="next">
+				<a href="#">Next Project/Post</a>
+			</div>
+
+			<div class="prev">
+				<a href="#">Previous Project/Post</a>
+			</div>
+		</nav>
+	</div>
+</div>

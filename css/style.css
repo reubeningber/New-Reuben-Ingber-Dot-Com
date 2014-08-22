@@ -60,14 +60,13 @@ body {
   width: 60%;
   margin: 0 auto;
 }
+.container.page {
+  padding-top: 60px;
+}
 @media screen and (max-width: 768px) {
   .container {
     width: 95%;
   }
-}
-.page {
-  position: absolute;
-  top: 50px;
 }
 .btn,
 .btn:link,
@@ -674,10 +673,6 @@ header:after {
   animation-duration: 3s;
 }
 /* Mobile Styles */
-.icons {
-  margin-top: 4%;
-  margin-left: 3%;
-}
 .social-ico {
   font-size: 35px;
   text-decoration: none;
@@ -758,6 +753,7 @@ header:after {
 footer .footer-top {
   background: #f2e394;
   text-align: center;
+  padding: 20px 0;
 }
 footer .footer-bottom {
   padding: 50px;

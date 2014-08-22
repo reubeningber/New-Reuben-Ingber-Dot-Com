@@ -1,0 +1,16 @@
+<header class="site-header">
+	<div class="">
+		<h1 class="site-title">RAI</h1>
+		<a href="#" class="toggle-nav"><i class="fa fa-bars"></i></a>
+		<nav class="global-nav">
+			<ul>
+			  {% for page in site.pages %}
+			  <li>
+			    <a href="{{page.url}}"{% if page.url == url %} class="active"{% endif %}>{{page.title}}</a>
+			  </li>
+			  {% endfor %}
+			  <li class="podcast"><a href="http://howtoholdapencil.com">Podcast</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
