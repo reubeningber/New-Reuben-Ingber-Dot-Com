@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".toggle-nav").on("click",function(n){event.preventDefault(),$(".global-nav").toggleClass("open")})});
