@@ -40,10 +40,14 @@
 
 	h1 {
 		font-size: 100px;
-		line-height: 1.1;
+		line-height: 1;
 		margin: 0;
 		padding: 0;
 		color: @green;
+	}
+
+	.tag-line {
+		margin: 15px 0;
 	}
 }
 
@@ -54,6 +58,10 @@
     bottom: 45px;
     left: 50%;
     right: 50%;
+
+    @media screen and (max-width: 768px) {
+    	display: none;
+    }
 }
 
 .home-top {
