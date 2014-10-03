@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".toggle-nav").on("click",function(n){event.preventDefault(),$(".global-nav").toggleClass("open")})});
+$(document).ready(function(){$(".js-fit-text").each(function(){var t=$(this),e=t.data("fit-compressor")||1,n=t.data("fit-max-font-size")||Number.POSITIVE_INFINITY,a=t.data("fit-min-font-size")||Number.NEGATIVE_INFINITY;t.fitText(e,{maxFontSize:n,minFontSize:a})}),$(".toggle-nav").on("click",function(t){t.preventDefault(),$(".global-nav").toggleClass("open")})});
