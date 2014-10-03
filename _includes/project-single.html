@@ -8,17 +8,18 @@
 
 <div class="project-page">
 	<div class="container">
-		<h1>A Website for {{ title }}</h1>
-		<h2 class="project-role">Role: {{meta['Project Role']}}</h2>
+		<h2 class="project-sub-hd">A Project For</h2>
+		<h1 class="project-title">{{ title }}</h1>
+	
+		<span class="project-role">Role: {{meta['Project Role']}}</span>
+	
+		<p><span>Deliverables: </span>{{meta['Deliverables']}}</p>
 
+		<a href="{{meta['Project URL']}}" target="_blank" class="view-site-btn btn btn--gray btn--m">View Site</a>
 		<div class="body-text">
 			{{ body }}
 		</div>
 
-		<h2>Deliverables</h2>
-		<p>{{meta['Deliverables']}}</p>
-
-		<a href="{{meta['Project URL']}}" class="btn btn--gray btn--m">View Site</a>
 		
 		<div class="browser-frame">
 	        <div class="browser-top-bar">
@@ -33,16 +34,5 @@
 				<img src="{{meta['Project Image']}}" alt="">
 	        </div>
 	    </div>
-
-
-		<nav class="nav">
-			<div class="next">
-				<a href="#">Next Project/Post</a>
-			</div>
-
-			<div class="prev">
-				<a href="#">Previous Project/Post</a>
-			</div>
-		</nav>
 	</div>
 </div>

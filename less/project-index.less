@@ -1,28 +1,47 @@
 .project-index {
 	width: 100%;
-	height: 600px;
+	height: 400px;
 	display: table;
 	text-align: center;
+
+	&.first-item {
+		padding-top: 50px;
+	}
 
 	.project-wrapper {
 		display: table-cell;
 		vertical-align: middle;
 	}
-}
 
-.project-page {
-	background: #fff;
-	text-align: center;
-}
-
-@media screen and (max-width: 768px) {
 	.img-container {
-		width: 50%;
+		width: 90%;
+		max-width: 600px;
 		margin: 0 auto;
 
 		img {
 			width: 100%;
 		}
 	}
-	
+
+	@media screen and (max-width: 400px) {
+		height: 200px
+	}
+}
+
+.project-page {
+	margin-bottom: 25px;
+	background: #fff;
+	text-align: left;
+}
+
+.project-title {
+	font-size: 56px;
+}
+
+.project-sub-hd {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 20px;
+	line-height: 1;
+	margin: 0;
+	padding: 20px 0 0 0;
 }
