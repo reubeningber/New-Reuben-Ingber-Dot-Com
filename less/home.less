@@ -186,3 +186,37 @@
         }
     }
 }
+
+/*-------------------------------------------- */
+/** Recent Musings */
+/*-------------------------------------------- */
+
+.musings {
+    text-align: center;
+    padding: 15px 0;
+    margin: 25px 0;
+    background: @yellow;
+}
+
+.recent-musings {
+    .clearfix();
+
+    a {
+        float: left;
+        padding: 15px 0;
+        width: 33%;
+        text-align: center;
+        font-size: 18px;
+
+        @media screen and (max-width: 400px) {
+            float: none;
+            display: block;
+            width: 100%;
+            font-size: 18px;
+
+            &:nth-child(1n+5) {
+                display: none;
+            } 
+        }
+    }
+}

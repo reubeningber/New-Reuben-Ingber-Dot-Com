@@ -312,6 +312,45 @@ width:calc(33% - 10px);
     margin: 0 10px 0 0;
   }
 }
+/*-------------------------------------------- */
+/** Recent Musings */
+/*-------------------------------------------- */
+.musings {
+  text-align: center;
+  padding: 15px 0;
+  margin: 25px 0;
+  background: #f2e394;
+}
+.recent-musings {
+  zoom: 1;
+}
+.recent-musings:before {
+  content: '';
+  display: block;
+}
+.recent-musings:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.recent-musings a {
+  float: left;
+  padding: 15px 0;
+  width: 33%;
+  text-align: center;
+  font-size: 18px;
+}
+@media screen and (max-width: 400px) {
+  .recent-musings a {
+    float: none;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+  }
+  .recent-musings a:nth-child(1n+5) {
+    display: none;
+  }
+}
 .btn,
 .btn:link,
 .btn:visited {

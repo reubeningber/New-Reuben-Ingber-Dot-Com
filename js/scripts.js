@@ -41,18 +41,6 @@ $(document).ready(function() {
     /** Get Podcasts Episodes */
     /*-------------------------------------------- */
 
-
-
-    // $.get('http://howtoholdapencil.com/feed.xml', function (data) {
-    //     $(data).find("entry").each(function () { // or "item" or whatever suits your feed
-    //         var el = $(this);
-
-    //         console.log("------------------------");
-    //         console.log("title      : " + el.find("title").text());
-    //         console.log("link     : " + el.find("link").text());
-    //     });
-    // });document.location.protocol + 
-
     $.ajax({
         url      : 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://howtoholdapencil.com/feed.xml'),
         dataType : 'json',
@@ -68,6 +56,25 @@ $(document).ready(function() {
                 //     $('.episode-link').attr('src', 'e.link');
                 //     $('episode-title').html(e.title)
                 // });
+            }
+        }
+    });
+
+    /*-------------------------------------------- */
+    /** Get Blog Posts */
+    /*-------------------------------------------- */
+    
+        $.ajax({
+        url      : 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://blog.reubeningber.com/feed'),
+        dataType : 'json',
+        success  : function (data) {
+            if (data.responseData.feed && data.responseData.feed.entries) {
+                var $recentMusings = $('.recent-musings');
+
+                $.each(data.responseData.feed.entries,function(i,e) {
+                    $('<a>', {text:e.title, href: e.link}).appendTo($recentMusings);
+                     return i<2;
+                });
             }
         }
     });
