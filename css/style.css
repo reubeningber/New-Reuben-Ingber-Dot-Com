@@ -75,7 +75,7 @@ body {
 @media screen and (max-width: 768px) {
   .container {
     width: 95%;
-    max-width: none;
+    max-width: 1100px;
   }
   .container.header {
     width: 100%;
@@ -138,6 +138,15 @@ ul {
   display: table-cell;
   vertical-align: middle;
 }
+.about-text h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+}
+.about-text span {
+  font-size: 30px;
+  display: block;
+}
 /*-------------------------------------------- */
 /** Social */
 /*-------------------------------------------- */
@@ -189,6 +198,15 @@ width:calc(33% - 15px);
   display: table-cell;
   vertical-align: middle;
 }
+.recent-project-list li .recent-project-wrapper img {
+  max-width: 90%;
+}
+@media screen and (max-width: 768px) {
+  .recent-project-list li {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}
 /*-------------------------------------------- */
 /** Recent Podcast Episodes */
 /*-------------------------------------------- */
@@ -216,6 +234,14 @@ width:calc(33% - 15px);
   text-align: center;
   font-size: 24px;
 }
+@media screen and (max-width: 400px) {
+  .recent-episodes a {
+    float: none;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+  }
+}
 /*-------------------------------------------- */
 /** Instagram Pics */
 /*-------------------------------------------- */
@@ -224,14 +250,34 @@ width:calc(33% - 15px);
 }
 .recent-instagram li {
   float: left;
+  -lh-property: 0;
+width:-webkit-calc(16.88% - 15px);
+width:-moz-calc(16.88% - 15px);
+width:calc(16.88% - 15px);
+;
   margin: 0 15px 0 0;
-  width: 12.5%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.recent-instagram li img {
+  width: 100%;
+}
 .recent-instagram li:last-child {
   margin: 0 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  .recent-instagram {
+    margin: 0 0 0 10px;
+  }
+  .recent-instagram li {
+    -lh-property: 0;
+width:-webkit-calc(33% - 10px);
+width:-moz-calc(33% - 10px);
+width:calc(33% - 10px);
+;
+    margin: 0 10px 0 0;
+  }
 }
 .btn,
 .btn:link,

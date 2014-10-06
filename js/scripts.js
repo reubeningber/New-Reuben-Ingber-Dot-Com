@@ -33,7 +33,7 @@ $(document).ready(function() {
         userId: 1920699,
         template: '<li><a href="{{link}}" target="_blank"><img src="http://{{image}}" alt=""></a></li>',
         resolution: 'thumbnail',
-        limit: 7
+        limit: 6
     });
     feed.run();
 

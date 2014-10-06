@@ -10,7 +10,7 @@
     <meta name="Description" content="{{site.meta['Description']}}">
     <meta name="Keywords" content="{{site.meta['Keywords']}}">
 
-    <meta name="viewport" content="initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
    
     <link type="application/rss+xml" rel="alternate" title="How to Hold a Pencil" href="{{site.meta['RSS Link']}}">
     
@@ -52,15 +52,17 @@
 <div class="container">
     <section class="about">
         <div class="about-wrapper">
-        <div class="left">
-            <h2>Hi friends, my name is</h2>
-            <h1>Reuben Ingber</h1>
-            <h2>a front-end web developer, designer, podcast host, and runner</h2>
-            <a href="#" class="view-site-btn btn btn--gray btn--m">Work With Me!</a>
-        </div>
-        <div class="right">
-            <img src="http://placehold.it/360x200" alt="">
-        </div>
+            <div class="right">
+                <img src="http://placehold.it/360x200" alt="">
+            </div>
+            <div class="left">
+                <div class="about-text">
+                    <span>Hi friends, my name is</span>
+                    <h1 class="js-fit-text" data-fit-max-font-size="60"  data-fit-min-font-size="45" data-fit-compressor="1">Reuben Ingber</h1>
+                    <span>a front-end web developer, designer, podcast host, and runner</span>
+                    <a href="#" class="view-site-btn btn btn--gray btn--m">Work With Me!</a>
+                </div>
+            </div>
         </div>
     </section>
 </div>
@@ -88,11 +90,11 @@
             <li style="background-color:blue">
                 <div class="recent-project-wrapper">
                     <a href="#">
-                        <img src="http://placehold.it/200x200" alt="">
+                        <img src="http://placehold.it/600x200" alt="">
                     </a>
                 </div>
             </li>
-            <li style="background-color:blue">
+            <li style="background-color:magenta">
                 <div class="recent-project-wrapper">
                     <a href="#">
                         <img src="http://placehold.it/200x200" alt="">
@@ -100,16 +102,16 @@
                 </div>
             </li>
 
-            <li style="background-color:blue">
+            <li style="background-color:green">
                 <div class="recent-project-wrapper">
                     <a href="#">
-                        <img src="http://placehold.it/200x200" alt="">
+                        <img src="http://placehold.it/400x200" alt="">
                     </a>
                 </div>
             </li>
         </ul>
 
-        <a class="btn btn--gray btn--m" href="#">More Projects ></a>
+        <a class="btn btn--gray btn--m" href="#">More Projects <i class="fa fa-arrow-right"></i></a>
     </section>
 </div>
 
@@ -121,7 +123,7 @@
            
         </div>
         
-        <a class="btn btn--gray btn--m" href="#">Visit How to Hold a Pencil</a>
+        <a class="btn btn--gray btn--m" href="http://howtoholdapencil.com" target="_blank">Visit How to Hold a Pencil <i class="fa fa-arrow-right"></i></a>
         </div>
     </section>
 
