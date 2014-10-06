@@ -146,6 +146,7 @@ ul {
   padding: 15px 0;
 }
 .social .icons {
+  text-align: center;
   margins: 0 auto;
 }
 /*-------------------------------------------- */
@@ -155,6 +156,7 @@ ul {
   text-align: center;
 }
 .recent-project-list {
+  margin: 15px 0;
   zoom: 1;
 }
 .recent-project-list:before {
@@ -168,14 +170,24 @@ ul {
 }
 .recent-project-list li {
   float: left;
-  width: 33.33333333333333%;
-  padding: 0 15px 0 0;
+  display: table;
+  -lh-property: 0;
+width:-webkit-calc(33% - 15px);
+width:-moz-calc(33% - 15px);
+width:calc(33% - 15px);
+;
+  height: 250px;
+  margin: 0 15px 0 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .recent-project-list li:last-child {
   margin: 0 0 0 0;
+}
+.recent-project-list li .recent-project-wrapper {
+  display: table-cell;
+  vertical-align: middle;
 }
 /*-------------------------------------------- */
 /** Recent Podcast Episodes */
@@ -197,7 +209,7 @@ ul {
   display: table;
   clear: both;
 }
-.recent-episodes li {
+.recent-episodes a {
   float: left;
   padding: 15px 0;
   width: 50%;

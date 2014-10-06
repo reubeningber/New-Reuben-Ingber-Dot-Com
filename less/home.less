@@ -35,6 +35,7 @@
     padding: 15px 0;
     
     .icons {
+        text-align: center;
         margins: 0 auto;
     }
 }
@@ -48,19 +49,29 @@
 }
 
 .recent-project-list {
+    margin: 15px 0;
     .clearfix();
 
     li {
         float: left;
-        width: percentage(1 / 3);
-        padding: 0 15px 0 0;
+        display: table;
+        .calc(width, ~'33% - 15px');
+        height: 250px;
+        margin: 0 15px 0 0;
         .box-sizing(border-box);
 
 
         &:last-child {
             margin: 0 0 0 0;
         }
+
+        .recent-project-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+        }
     }
+
+
 }
 
 /*-------------------------------------------- */
@@ -76,7 +87,7 @@
 .recent-episodes {
     .clearfix();
 
-    li {
+    a {
         float: left;
         padding: 15px 0;
         width: 50%;
