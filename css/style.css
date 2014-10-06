@@ -134,6 +134,21 @@ ul {
   width: 50%;
   text-align: left;
 }
+.about .right img {
+  width: 100%;
+}
+@media screen and (max-width: 400px) {
+  .about .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .about .left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
 .about-wrapper {
   display: table-cell;
   vertical-align: middle;
@@ -162,6 +177,7 @@ ul {
 /** Recent Projects */
 /*-------------------------------------------- */
 .recent {
+  margin: 25px 0;
   text-align: center;
 }
 .recent-project-list {
@@ -241,12 +257,28 @@ width:calc(33% - 15px);
     width: 100%;
     font-size: 18px;
   }
+  .recent-episodes a:nth-child(1n+5) {
+    display: none;
+  }
 }
 /*-------------------------------------------- */
 /** Instagram Pics */
 /*-------------------------------------------- */
 .grams {
   text-align: center;
+  margin: 25px 0;
+}
+.recent-instagram {
+  zoom: 1;
+}
+.recent-instagram:before {
+  content: '';
+  display: block;
+}
+.recent-instagram:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 .recent-instagram li {
   float: left;

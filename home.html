@@ -60,7 +60,7 @@
                     <span>Hi friends, my name is</span>
                     <h1 class="js-fit-text" data-fit-max-font-size="60"  data-fit-min-font-size="45" data-fit-compressor="1">Reuben Ingber</h1>
                     <span>a front-end web developer, designer, podcast host, and runner</span>
-                    <a href="#" class="view-site-btn btn btn--gray btn--m">Work With Me!</a>
+                    <a href="/hire" class="view-site-btn btn btn--gray btn--m">Work With Me!</a>
                 </div>
             </div>
         </div>
@@ -134,6 +134,40 @@
         </ul>
     </section>
 </div>
+
+<footer>
+    <div class="footer-top">
+       <div class="icons animated fadeInDown">
+            <a class="social-ico twitter" href="{{site.meta['Twitter']}}"><i class="fa fa-twitter"></i></a>
+
+            <a class="social-ico github" href="{{site.meta['Github']}}"><i class="fa fa-github"></i></a>
+
+            <a class="social-ico email" href="mailto:{{site.meta['Email']}}"><i class="fa fa-paper-plane"></i></a>
+            
+            <a class="social-ico podcast" href="{{site.meta['Podcast']}}"><i class="fa fa-microphone"></i></a>
+            
+            <a class="social-ico facebook" href="{{site.meta['Facebook']}}"><i class="fa fa-facebook"></i></a>
+
+            <a class="social-ico instagram" href="{{site.meta['Instagram']}}http://instagram.com/reubeningber"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="left">
+                <span>{{site.meta['Tagline']}}</span>
+            </div>
+
+            <div class="middle">
+                <span>Built with <i class="fa fa-heart"></i> in NYC</span>
+                <span>&copy; 2014 Reuben A. Ingber</span>
+            </div>
+
+            <div class="right">
+                <a href="mailto:{{site.meta['Email']}}">{{site.meta['Email']}}</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/vendor/fittext.js"></script>

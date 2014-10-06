@@ -17,10 +17,25 @@
 
     .right {
         width: 50%;
-        text-align: left
+        text-align: left;
+
+        img {
+            width: 100%;
+        }
     }
 
     @media screen and (max-width: 400px) {
+        .right {
+            float: none; 
+            width: 100%;
+            text-align: center;
+        }
+
+        .left {
+            float: none; 
+            width: 100%;
+            text-align: center;
+        }
         
     }
 }
@@ -62,6 +77,7 @@
 /*-------------------------------------------- */
 
 .recent {
+    margin: 25px 0;
     text-align: center;
 }
 
@@ -125,6 +141,10 @@
             display: block;
             width: 100%;
             font-size: 18px;
+
+            &:nth-child(1n+5) {
+                display: none;
+            } 
         }
     }
 }
@@ -135,8 +155,11 @@
 
 .grams {
     text-align: center;
+    margin: 25px 0;
 }
 .recent-instagram {
+    .clearfix();
+
     li {
         float: left;
         .calc(width, ~'16.88% - 15px');
