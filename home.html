@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>{% if current.title == 'Home' %}{{ site.title }}{% else %}{{ current.title }} | {{ site.title }}{% endif %}</title>
+    <meta name="Author" content="{{ post.author }}">
+    <meta name="Description" content="{{site.meta['Description']}}">
+    <meta name="Keywords" content="{{site.meta['Keywords']}}">
+
+    <meta name="viewport" content="initial-scale=1">
+   
+    <link type="application/rss+xml" rel="alternate" title="How to Hold a Pencil" href="{{site.meta['RSS Link']}}">
+    
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.sitemap_url }}" />
+
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Typography -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Facebook Open Graph Properties -->
+    <meta property="og:title" content="{{ site.title }} - {{ current.title }}" />
+    <meta property="og:description" content="{{site.meta['Description']}}"/>
+    <meta property="og:image" content="{{site.permalink}}{{post.meta['episode-img']}}" />
+
+</head>
+
+<body>
+   <header class="site-header">
+        <div class="container header">
+            <h1 class="site-title">RAI</h1>
+            <a href="#" class="toggle-nav"><i class="fa fa-bars"></i></a>
+            <nav class="global-nav">
+                <ul>
+                  {% for page in site.pages %}
+                  <li>
+                    <a href="{{page.url}}"{% if page.url == url %} class="active"{% endif %}>{{page.title}}</a>
+                  </li>
+                  {% endfor %}
+                  <li class="podcast"><a href="http://howtoholdapencil.com">Podcast</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="container">
+    <section class="about">
+        <div class="about-wrapper">
+        <div class="left">
+            <h2>Hi friends, my name is</h2>
+            <h1>Reuben Ingber</h1>
+            <h2>a front-end web developer, designer, podcast host, and runner</h2>
+            <a href="#" class="view-site-btn btn btn--gray btn--m">Work With Me!</a>
+        </div>
+        <div class="right">
+            <img src="http://placehold.it/360x200" alt="">
+        </div>
+        </div>
+    </section>
+</div>
+
+    <section class="social">
+        <div class="icons animated fadeInDown">
+            <a class="social-ico twitter" href="{{site.meta['Twitter']}}"><i class="fa fa-twitter"></i></a>
+
+            <a class="social-ico github" href="{{site.meta['Github']}}"><i class="fa fa-github"></i></a>
+
+            <a class="social-ico email" href="mailto:{{site.meta['Email']}}"><i class="fa fa-paper-plane"></i></a>
+            
+            <a class="social-ico podcast" href="{{site.meta['Podcast']}}"><i class="fa fa-microphone"></i></a>
+            
+            <a class="social-ico facebook" href="{{site.meta['Facebook']}}"><i class="fa fa-facebook"></i></a>
+
+            <a class="social-ico instagram" href="{{site.meta['Instagram']}}http://instagram.com/reubeningber"><i class="fa fa-instagram"></i></a>
+        </div>
+    </section>
+
+<div class="container">
+    <section class="recent">
+        <h1>Recent Projects</h1>
+        <ul class="ui-list recent-project-list">
+            <li><a href="#"><img src="http://placehold.it/300x300" alt=""></a></li>
+            <li><a href="#"><img src="http://placehold.it/300x300" alt=""></a></li>
+            <li><a href="#"><img src="http://placehold.it/300x300" alt=""></a></li>
+        </ul>
+
+        <a class="btn btn--gray btn--m" href="#">More Projects ></a>
+    </section>
+</div>
+
+    <section class="podcast">
+    <div class="container">
+        <h1>Recently on How to Hold a Pencil</h1>
+        
+        <ul class="ui-list recent-episodes">
+            <li>
+                <a href="#">
+                    <h3><span class="number">No. XXX </span>John Smith Smith</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3><span class="number">No. XXX </span>John Smith Smith</h3>
+                </a>
+            </li>
+        </ul>
+        
+        <a class="btn btn--gray btn--m" href="#">Visit How to Hold a Pencil</a>
+        </div>
+    </section>
+
+<div class="container">
+    <section class="grams">
+        <h1>Recent Grams</h1>
+        <ul class="ui-list recent-instagram" id="instafeed">
+        </ul>
+    </section>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/vendor/fittext.js"></script>
+<script src="js/vendor/instafeed.min.js"></script>
+<script src="js/scripts.js"></script>
+
+
+</body>
+</html>

@@ -93,6 +93,134 @@ ul {
   list-style-type: square;
   margin: 0 0 25px 50px;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.ui-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/*-------------------------------------------- */
+/** About Me */
+/*-------------------------------------------- */
+.about {
+  display: table;
+  margin: 50px 0;
+  height: 400px;
+  zoom: 1;
+}
+.about:before {
+  content: '';
+  display: block;
+}
+.about:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.about .left {
+  width: 50%;
+  padding-right: 20px;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.about .right {
+  width: 50%;
+  text-align: left;
+}
+.about-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*-------------------------------------------- */
+/** Social */
+/*-------------------------------------------- */
+.social {
+  background: #f2e394;
+  padding: 15px 0;
+}
+.social .icons {
+  margins: 0 auto;
+}
+/*-------------------------------------------- */
+/** Recent Projects */
+/*-------------------------------------------- */
+.recent {
+  text-align: center;
+}
+.recent-project-list {
+  zoom: 1;
+}
+.recent-project-list:before {
+  content: '';
+  display: block;
+}
+.recent-project-list:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.recent-project-list li {
+  float: left;
+  width: 33.33333333333333%;
+  padding: 0 15px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.recent-project-list li:last-child {
+  margin: 0 0 0 0;
+}
+/*-------------------------------------------- */
+/** Recent Podcast Episodes */
+/*-------------------------------------------- */
+.podcast {
+  padding: 15px 0;
+  background: #f2e394;
+  text-align: center;
+}
+.recent-episodes {
+  zoom: 1;
+}
+.recent-episodes:before {
+  content: '';
+  display: block;
+}
+.recent-episodes:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.recent-episodes li {
+  float: left;
+  padding: 15px 0;
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+}
+/*-------------------------------------------- */
+/** Instagram Pics */
+/*-------------------------------------------- */
+.grams {
+  text-align: center;
+}
+.recent-instagram li {
+  float: left;
+  margin: 0 15px 0 0;
+  width: 12.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.recent-instagram li:last-child {
+  margin: 0 0 0 0;
+}
 .btn,
 .btn:link,
 .btn:visited {
@@ -835,15 +963,15 @@ footer .footer-bottom:after {
   clear: both;
 }
 footer .footer-bottom .left {
-  width: 33.33333333%;
+  width: 33.33333333333333%;
   float: left;
 }
 footer .footer-bottom .middle {
-  width: 33.33333333%;
+  width: 33.33333333333333%;
   float: left;
 }
 footer .footer-bottom .right {
-  width: 33.33333333%;
+  width: 33.33333333333333%;
   float: left;
 }
 footer .footer-bottom span {
