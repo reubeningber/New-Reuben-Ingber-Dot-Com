@@ -10,7 +10,7 @@
     <meta name="Description" content="{{site.meta['Description']}}">
     <meta name="Keywords" content="{{site.meta['Keywords']}}">
 
-    <meta name="viewport" content="initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
    
     <link type="application/rss+xml" rel="alternate" title="How to Hold a Pencil" href="{{site.meta['RSS Link']}}">
     
@@ -35,10 +35,9 @@
     {% include 'includes/header' %}
 
     {{ content }}
-     
-    {% if url != '/' %}
-        {% include 'includes/footer' %}
-    {% endif %}
+
+    {% include 'includes/footer' %}
+
 
     {% include 'includes/scripts' %}
 

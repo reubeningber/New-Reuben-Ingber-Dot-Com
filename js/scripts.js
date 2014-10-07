@@ -42,7 +42,7 @@ $(document).ready(function() {
     /*-------------------------------------------- */
 
     $.ajax({
-        url      : 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://howtoholdapencil.com/feed.xml'),
+        url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://howtoholdapencil.com/feed.xml'),
         dataType : 'json',
         success  : function (data) {
             if (data.responseData.feed && data.responseData.feed.entries) {
@@ -65,7 +65,7 @@ $(document).ready(function() {
     /*-------------------------------------------- */
     
         $.ajax({
-        url      : 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://blog.reubeningber.com/feed'),
+        url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://blog.reubeningber.com/feed'),
         dataType : 'json',
         success  : function (data) {
             if (data.responseData.feed && data.responseData.feed.entries) {

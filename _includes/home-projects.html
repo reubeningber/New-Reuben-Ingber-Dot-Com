@@ -1,0 +1,17 @@
+<div class="container">
+    <section class="recent">
+        <h1 class="js-fit-text" data-fit-max-font-size="55"  data-fit-min-font-size="40" data-fit-compressor="1">Recent Projects</h1>
+        <div class="recent-project-list">
+            {% for post in site.pages.work.posts limit: 3 %} 
+                <div class="recent-project-wrapper" style="background-color:{{post.meta['Background Color']}}">
+                    <a class="recent-project-item" href="{{post.url}}">
+                        <img src="{{post.meta['Header Image']}}" alt="">
+                    </a>
+                </div>
+            
+            {% endfor %}
+        </div>
+
+        <a class="btn btn--gray btn--m" href="/work">More Projects <i class="fa fa-arrow-right"></i></a>
+    </section>
+</div>

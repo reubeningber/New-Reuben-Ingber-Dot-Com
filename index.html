@@ -1,6 +1,10 @@
 {% capture content %}
-    {% include 'includes/about-me-block' %}
-    {% include 'includes/slide-content-bottom' %}
+    {% include 'includes/home-about' %}
+    <section class="social">{% include 'includes/social-icons' %}</section> 
+    {% include 'includes/home-projects' %}
+    {% include 'includes/home-podcast' %}
+    {% include 'includes/home-instagram' %}
+    <!-- {% include 'includes/home-musings' %} -->
 {% endcapture %}
 
 {% include 'layouts/default' %}
