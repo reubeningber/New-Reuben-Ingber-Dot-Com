@@ -11,11 +11,9 @@
 		<h2 class="project-sub-hd">A Project For</h2>
 		<h1 class="project-title">{{ title }}</h1>
 	
-		<span class="project-role">Role: {{meta['Project Role']}}</span>
-	
-		<p><span>Deliverables: </span>{{meta['Deliverables']}}</p>
+		<p><span class="italic bold">Role:</span> {{meta['Project Role']}} <br>
+			<span class="italic bold">Deliverables:</span> {{meta['Deliverables']}}</p>
 
-		<a href="{{meta['Project URL']}}" target="_blank" class="view-site-btn btn btn--gray btn--m">View Site</a>
 		<div class="body-text">
 			{{ body }}
 		</div>

@@ -1,10 +1,15 @@
-{% for post in site.pages.work.posts %}	
-<article class="project-index {% if forloop.first == true %}first-item{% endif %}" style="background-color: {{post.meta['Background Color']}}">
-	<div class="container project-wrapper">
-		<div class="img-container">
-			<img src="{{post.meta['Header Image']}}" alt="">	
-		</div>
-		<a href="{{post.url}}" class="btn btn--gray btn--m">View Project</a>
-	</div>
-</article>
-{% endfor %}
+<div class="container page">
+    <section class="recent">
+        <h1 class="js-fit-text" data-fit-max-font-size="55"  data-fit-min-font-size="40" data-fit-compressor="1">Projects</h1>
+        <div class="recent-project-list">
+            {% for post in site.pages.work.posts %} 
+                <div class="recent-project-wrapper" style="background-color:{{post.meta['Background Color']}}">
+                    <a class="recent-project-item" href="{{post.url}}">
+                        <img src="{{post.meta['Header Image']}}" alt="">
+                    </a>
+                </div>
+            
+            {% endfor %}
+        </div>
+    </section>
+</div>

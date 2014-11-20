@@ -74,7 +74,7 @@
 /*-------------------------------------------- */
 
 .social {
-    background: @yellow;
+    background: #00B9E9;
     padding: 15px 0;
     
     .icons {
@@ -102,9 +102,9 @@
         display: table;
         .calc(width, ~'33% - 15px');
         height: 250px;
-        margin: 0 15px 0 0;
+        margin: 0 15px 15px 0;
         .box-sizing(border-box);
-        .opacity(.75);
+        .opacity(.90);
         .transition(opacity, 100, ease-out);
 
         &:hover {
@@ -144,7 +144,8 @@
 
 .recent-podcast {
     padding: 15px 0;
-    background: @yellow;
+    background: #00B9E9;
+    color: @white;
     text-align: center;
 }
 
@@ -157,6 +158,7 @@
         width: 50%;
         text-align: center;
         font-size: 24px;
+        color: @white;
 
         @media screen and (max-width: 400px) {
             float: none;
