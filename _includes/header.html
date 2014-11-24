@@ -1,7 +1,7 @@
 <header class="site-header">
 	<div class="container header">
 		<div class="logo-container">
-		<img src="/img/logo.png" alt="">
+		<a href="/"><img src="/img/logo.png" alt=""></a>
 		</div>
 		<a href="#" class="toggle-nav"><i class="fa fa-bars"></i></a>
 		<nav class="global-nav">
@@ -11,7 +11,7 @@
 			    <a href="{{page.url}}"{% if page.url == url %} class="active"{% endif %}>{{page.title}}</a>
 			  </li>
 			  {% endfor %}
-			  <li class="podcast"><a href="http://howtoholdapencil.com">Podcast</a></li>
+			  <li class="podcast"><a href="http://howtoholdapencil.com" target="_blank">Podcast</a></li>
 			</ul>
 		</nav>
 	</div>
